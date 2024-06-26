@@ -1,0 +1,20 @@
+<div class="container-box">
+  <ul class="nav">
+    <div class="nav">
+      <button *ngIf="currentPath !== '/scores' && currentPath!== '/my-scores' " (click)="onScores()" type="button"
+        class="nav-item scores">SCORES</button>
+      <button *ngIf="currentPath === '/scores' || currentPath === '/my-scores'" (click)="navigate()" type="button"
+        class="nav-item logout">PLAY
+        GAME</button>
+    </div>
+    <div class="nav nav-right">
+      <li class="nav-item nav-item-time">TIME: <span class="color-green">{{ time }}</span></li>
+      <li class="nav-item nav-item-score">SCORE: <span class="color-green">{{ score }}</span></li>
+      <li class="nav-item nav-item-status">GAME STATUS: <span class="color-green">{{ gameStatus }}</span></li>
+      <button *ngIf="isGamePage()" (click)="onLogOut()" type="button" class="nav-item logout">EXIT GAME</button>
+    </div>
+  </ul>
+
+  <h1>SNAKE GAME 🐍</h1>
+  <router-outlet></router-outlet>
+</div>

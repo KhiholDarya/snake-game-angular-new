@@ -1,0 +1,15 @@
+<h2>My Scores:</h2>
+<div class="container">
+  <button type="button" class="all-scores-btn" (click)="loadAllScores()">SHOW ALL SCORES</button>
+  <div class="sort-filter">
+    <button (click)="toggleSortDirection()">Sort: {{ sortDirection === 'asc' ? 'Ascending &#9650;' : 'Descending &#9660;' }}</button>
+  </div>
+  <br>
+  <div class="table">
+    <ol class="scores-list">
+      <li *ngFor="let score of scores" class="table-item">
+        {{ score.name }} - {{ score.score }}
+      </li>
+    </ol>
+  </div>
+</div>

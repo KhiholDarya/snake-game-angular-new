@@ -1,0 +1,11 @@
+<h2>Top 10 High Scores:</h2>
+<div class="container">
+  <button type="button" class="my-score-btn" (click)="loadMyScores()">SHOW MY SCORES &#9660;</button>
+  <div class="table">
+    <ol>
+      <li class="table-item" *ngFor="let score of topScores">
+        {{ score.name }} - {{ score.score }}
+      </li>
+    </ol>
+  </div>
+</div>

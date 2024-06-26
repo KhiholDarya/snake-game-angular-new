@@ -1,0 +1,51 @@
+.container{
+  margin-top: -50px;
+}
+.label-card{
+  padding: 30px;
+  max-width: 400px;
+  margin:0 auto;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: #ce02ceb9;
+  margin-bottom: 90px;
+
+}
+h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#formGroupExampleInput2{
+  width: 100%;
+  border: solid 2px black;
+}
+.button-box{
+  min-width: 200px;
+  margin: 0 auto;
+}
+.btn{
+  background-color: #8ada40;
+  width: 100%;
+  color: #000;
+  border: solid 2px black;
+}
+.btn:hover{
+  background-color: #75b836;
+}
+.btn:active{
+  background-color: #6aa731;
+  color:#000
+}
+.nav-link:link, .nav-link:active{
+  color: #000;
+}
+input .ng-touched .ng-invalid{
+      border: 1px #a2ff4b solid;
+}
+p{
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a2ff4b;
+}
+
